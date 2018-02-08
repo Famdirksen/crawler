@@ -346,6 +346,12 @@ class Crawler
             ->filter(function (UriInterface $url) {
                 return $this->crawlProfile->shouldCrawl($url);
             })
+            ->each(function(UriInterface $url) use ($foundOnUrl) {
+                //add all links to the crawlobserver for optional log
+                foreach ($this->crawlObservers as $crawlObserver) {
+                    $crawlObserver->urlFoundOnPage($url, $foundOnUrl);
+                }
+            })
             ->reject(function (UriInterface $url) {
                 return $this->crawlQueue->has($url);
             })

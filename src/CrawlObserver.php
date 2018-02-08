@@ -25,6 +25,16 @@ interface CrawlObserver
      * @return void
      */
     public function hasBeenCrawled(UriInterface $url, $response, ?UriInterface $foundOnUrl = null);
+    
+    /**
+     * Called when the crawler has found an url on a page.
+     *
+     * @param \Psr\Http\Message\UriInterface $urlFound
+     * @param \Psr\Http\Message\UriInterface $foundOnUrl
+     *
+     * @return void
+     */
+    public function urlFoundOnPage(UriInterface $urlFound, UriInterface $foundOnUrl);
 
     /**
      * Called when the crawl has ended.

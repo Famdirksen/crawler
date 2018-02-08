@@ -1,7 +1,8 @@
 <?php
 
-namespace Spatie\Crawler\Exception;
+namespace Famdirksen\Crawler\Exception;
 
 class UrlNotFoundByIndex extends \RuntimeException
 {
+	
 }

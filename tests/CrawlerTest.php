@@ -1,15 +1,15 @@
 <?php
 
-namespace Spatie\Crawler\Test;
+namespace Famdirksen\Crawler\Test;
 
 use GuzzleHttp\Psr7\Uri;
-use Spatie\Crawler\Crawler;
-use Spatie\Crawler\CrawlProfile;
+use Famdirksen\Crawler\Crawler;
+use Famdirksen\Crawler\CrawlProfile;
 use Psr\Http\Message\UriInterface;
 use Spatie\Browsershot\Browsershot;
-use Spatie\Crawler\CrawlSubdomains;
-use Spatie\Crawler\CrawlInternalUrls;
-use Spatie\Crawler\EmptyCrawlObserver;
+use Famdirksen\Crawler\CrawlSubdomains;
+use Famdirksen\Crawler\CrawlInternalUrls;
+use Famdirksen\Crawler\EmptyCrawlObserver;
 
 class CrawlerTest extends TestCase
 {

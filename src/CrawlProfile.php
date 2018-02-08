@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Crawler;
+namespace Famdirksen\Crawler;
 
 use Psr\Http\Message\UriInterface;
 

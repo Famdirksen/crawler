@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Crawler;
+namespace Famdirksen\Crawler;
 
 use Generator;
 use Tree\Node\Node;
@@ -16,9 +16,9 @@ use Spatie\Browsershot\Browsershot;
 use Psr\Http\Message\StreamInterface;
 use Symfony\Component\DomCrawler\Link;
 use Psr\Http\Message\ResponseInterface;
-use Spatie\Crawler\CrawlQueue\CrawlQueue;
+use Famdirksen\Crawler\CrawlQueue\CrawlQueue;
 use GuzzleHttp\Exception\RequestException;
-use Spatie\Crawler\CrawlQueue\CollectionCrawlQueue;
+use Famdirksen\Crawler\CrawlQueue\CollectionCrawlQueue;
 use Symfony\Component\DomCrawler\Crawler as DomCrawler;
 
 class Crawler
@@ -29,16 +29,16 @@ class Crawler
     /** @var \Psr\Http\Message\UriInterface */
     protected $baseUrl;
 
-    /** @var array[\Spatie\Crawler\CrawlObserver] */
+    /** @var array[\Famdirksen\Crawler\CrawlObserver] */
     protected $crawlObservers;
 
-    /** @var \Spatie\Crawler\CrawlProfile */
+    /** @var \Famdirksen\Crawler\CrawlProfile */
     protected $crawlProfile;
 
     /** @var int */
     protected $concurrency;
 
-    /** @var \Spatie\Crawler\CrawlQueue\CrawlQueue */
+    /** @var \Famdirksen\Crawler\CrawlQueue\CrawlQueue */
     protected $crawlQueue;
 
     /** @var int */
@@ -178,7 +178,7 @@ class Crawler
     }
 
     /**
-     * @param \Spatie\Crawler\CrawlObserver|array[\Spatie\Crawler\CrawlObserver] $crawlObservers
+     * @param \Famdirksen\Crawler\CrawlObserver|array[\Famdirksen\Crawler\CrawlObserver] $crawlObservers
      *
      * @return $this
      */
@@ -206,7 +206,7 @@ class Crawler
     }
 
     /**
-     * @param \Spatie\Crawler\CrawlProfile $crawlProfile
+     * @param \Famdirksen\Crawler\CrawlProfile $crawlProfile
      *
      * @return $this
      */

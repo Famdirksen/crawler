@@ -1,7 +1,7 @@
 {
-    "name": "spatie/crawler",
-    "description": "Crawl all internal links found on a website",
-    "homepage": "https://github.com/spatie/crawler",
+    "name": "famdirksen/crawler",
+    "description": "Crawl all internal links found on a website - used for custom crawler",
+    "homepage": "https://github.com/famdirksen/crawler",
     "license": "MIT",
     "keywords": [
         "spatie",
@@ -13,6 +13,9 @@
         {
             "name": "Freek Van der Herten",
             "email": "freek@spatie.be"
+        }, {
+            "name": "Robin Dirksen",
+            "email": "robin@famdirksen.nl"
         }
     ],
     "require": {
@@ -30,12 +33,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Crawler\\": "src"
+            "Famdirksen\\Crawler\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Crawler\\Test\\": "tests"
+            "Famdirksen\\Crawler\\Test\\": "tests"
         }
     },
     "scripts": {

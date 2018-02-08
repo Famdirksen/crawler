@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\Crawler\Test;
+namespace Famdirksen\Crawler\Test;
 
-use Spatie\Crawler\CrawlObserver;
+use Famdirksen\Crawler\CrawlObserver;
 use Psr\Http\Message\UriInterface;
 
 class CrawlLogger implements CrawlObserver

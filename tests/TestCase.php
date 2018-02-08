@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Crawler\Test;
+namespace Famdirksen\Crawler\Test;
 
 use Throwable;
 use PHPUnit\Framework\TestCase as BaseTestCase;

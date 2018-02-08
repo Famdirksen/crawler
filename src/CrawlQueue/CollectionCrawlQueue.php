@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\Crawler\CrawlQueue;
+namespace Famdirksen\Crawler\CrawlQueue;
 
-use Spatie\Crawler\CrawlUrl;
+use Famdirksen\Crawler\CrawlUrl;
 use Illuminate\Support\Collection;
-use Spatie\Crawler\Exception\UrlNotFoundByIndex;
+use Famdirksen\Crawler\Exception\UrlNotFoundByIndex;
 
 class CollectionCrawlQueue implements CrawlQueue
 {
@@ -43,7 +43,7 @@ class CollectionCrawlQueue implements CrawlQueue
     /**
      * @param int $id
      *
-     * @return \Spatie\Crawler\CrawlUrl|null
+     * @return \Famdirksen\Crawler\CrawlUrl|null
      */
     public function getUrlById(int $id): CrawlUrl
     {
@@ -96,7 +96,7 @@ class CollectionCrawlQueue implements CrawlQueue
         return false;
     }
 
-    /** @return \Spatie\Crawler\CrawlUrl|null */
+    /** @return \Famdirksen\Crawler\CrawlUrl|null */
     public function getFirstPendingUrl()
     {
         return $this->pendingUrls->first();

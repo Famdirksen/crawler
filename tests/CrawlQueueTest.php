@@ -1,15 +1,15 @@
 <?php
 
-namespace Spatie\Crawler\Test;
+namespace Famdirksen\Crawler\Test;
 
 use GuzzleHttp\Psr7\Uri;
-use Spatie\Crawler\CrawlUrl;
-use Spatie\Crawler\CrawlQueue\CollectionCrawlQueue;
+use Famdirksen\Crawler\CrawlUrl;
+use Famdirksen\Crawler\CrawlQueue\CollectionCrawlQueue;
 
 class CrawlQueueTest extends TestCase
 {
     /**
-     * @var \Spatie\Crawler\CrawlQueue\CollectionCrawlQueue
+     * @var \Famdirksen\Crawler\CrawlQueue\CollectionCrawlQueue
      */
     protected $crawlQueue;
 
